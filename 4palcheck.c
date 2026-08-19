@@ -1,5 +1,10 @@
 #include<stdio.h>
 #include<string.h>
+#define s 4
+
+void pal(){
+
+}
 
 int ispal (char str[]){
   int l=0,r=strlen(str)-1;
@@ -12,23 +17,16 @@ int ispal (char str[]){
 
 int main(){
   
-  char str[10][10];
-  int lim;
-  printf("\nEnter the number of strings(max limit=10) :");
-  scanf("%d",&lim);
-
-  for(int i=0;i<lim;i++){
-    printf("\nEnter string %d (char limit=10):",i);
-    scanf("%9s",str[i]);
+  char str[s][11];
+  printf("\n Enter Strings\n");
+  for(int i=0;i<s;i++){
+    fgets(str[i],11, stdin);
+    str[i][strcspn(str[i], "\n")]=0;
   }
 
-  printf("\n==^==^== Report ==^==^==\n");
-  for(int i=0;i<lim;i++){
-    if(ispal(str[i])){
-      printf("\n%s is palindrome",str[i]);}
-    else{
-      printf("\n%s is not a palindrome",str[i]);}
+  for(int i=0;i<s;i++){
+    if(ispal(str[i])){printf("\n%s is palindrome",str[i]);}
+    else{printf("\n%s is not a palindrome",str[i]);}
   }
-  printf("\n");
   return 0;
 }
