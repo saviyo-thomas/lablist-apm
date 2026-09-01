@@ -50,6 +50,7 @@ void diasum(int t[5][5]){
   printf("\nSum of diagonal elements : %d",sum);
   return;
 }
+
 void tra(int t[5][5]){
    printf("\n");
    for(int i=0;i<5;i++){ for(int j=0;j<5;j++){
@@ -88,4 +89,4 @@ int main(){
  }}
   return 0;
 }
-
+bnt
