@@ -1,39 +1,56 @@
 #include<stdio.h>
-#define l 5
+#define m 5
 
-int a[l][l], b[l][l], c[l][l];
+int a[m][m], b[m][m], c[m][m];
 
-void gtel(int c[l][l]){
-  for(int i=0;i<l;i++){
-    for(int j=0;j<l;j++){
+int a[m][m]={
+  {1,3,3,3,3},
+  {1,3,3,3,3},
+  {1,3,3,3,3},
+  {1,3,3,3,3},
+  {1,3,3,3,3}};
+int  b[m][m]={
+  {2,2,2,2,1},
+  {2,2,2,2,1},
+  {2,2,2,2,1},
+  {2,2,2,2,1},
+  {2,2,2,2,1}};
+
+/*
+void gtel(int t[m][m]){
+  for(int i=0;i<m;i++){ for(int j=0;j<m;j++){
       printf("\nEnter element[%d][%d] :",i,j);
-      scanf("%d",&c[i][j]);
+      scanf("%d",&t[i][j]);
   }}
   return;
 }
-
+*/
 void clr(){printf("\e[1;1H\e[2J");}
 
-void tra(int t[l][l]){
+void tra(int t[m][m]){
   printf("\n");
-  for int i=0;i<l;i++{ for(int j=0;j<l;j++){
+  for (int i=0;i<m;i++){ for(int j=0;j<m;j++){
     printf("\t%d\t",t[i][j]);
-  }printf("\n");}
-}
+  }
+  printf("\n");
+}}
 
 void mult(){
-  for int i=0;i<l;i++{ for(int j=0;j<l;j++){
-    c[i][j]=a
+  for (int i=0;i<m;i++){ for(int j=0;j<m;j++){
+    c[i][j]=0;
   }}
+  for (int i=0;i<m;i++){ for(int j=0;j<m;j++){ for(int k=0;k<m;k++){
+    c[i][j]=a[i][k]*b[k][j];
+}}}}
 
-}
 int main(){
   printf("\nFirst array");
-  gtel(a);
+//  gtel(a);
   clr();
   printf("\nSecond array");
-  gtel(b);
+//  gtel(b);
   clr();
   mult();
-  tra(c)
+  tra(c);
+  return 0;
 }
