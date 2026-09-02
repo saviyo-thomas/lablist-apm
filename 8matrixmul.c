@@ -3,20 +3,6 @@
 
 int a[m][m], b[m][m], c[m][m];
 
-int a[m][m]={
-  {1,3,3,3,3},
-  {1,3,3,3,3},
-  {1,3,3,3,3},
-  {1,3,3,3,3},
-  {1,3,3,3,3}};
-int  b[m][m]={
-  {2,2,2,2,1},
-  {2,2,2,2,1},
-  {2,2,2,2,1},
-  {2,2,2,2,1},
-  {2,2,2,2,1}};
-
-/*
 void gtel(int t[m][m]){
   for(int i=0;i<m;i++){ for(int j=0;j<m;j++){
       printf("\nEnter element[%d][%d] :",i,j);
@@ -24,7 +10,7 @@ void gtel(int t[m][m]){
   }}
   return;
 }
-*/
+
 void clr(){printf("\e[1;1H\e[2J");}
 
 void tra(int t[m][m]){
@@ -40,15 +26,15 @@ void mult(){
     c[i][j]=0;
   }}
   for (int i=0;i<m;i++){ for(int j=0;j<m;j++){ for(int k=0;k<m;k++){
-    c[i][j]=a[i][k]*b[k][j];
+    c[i][j]+=a[i][k]*b[k][j];
 }}}}
 
 int main(){
   printf("\nFirst array");
-//  gtel(a);
+  gtel(a);
   clr();
   printf("\nSecond array");
-//  gtel(b);
+  gtel(b);
   clr();
   mult();
   tra(c);
