@@ -7,7 +7,7 @@ char cmail[LIM][50];
 void check(int s){
  for (int i=0;i<s;i++){
    for (int j=0;j<s;j++){
-     if strcmp(cmail)
+     if (strcmp(cmail)
  }}
 }
 int main(){
