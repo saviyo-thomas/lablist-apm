@@ -30,3 +30,16 @@ int main(){
   }
   return 0;
 }
+
+/*
+    Enter Strings
+    asdfdafg
+    asdffdsa
+    xcbvfg
+    malayalam
+
+    asdfdafg is not a palindrome
+    asdffdsa is palindrome
+    xcbvfg is not a palindrome
+    malayalam is palindrome
+   */

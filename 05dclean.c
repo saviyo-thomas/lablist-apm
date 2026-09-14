@@ -24,7 +24,7 @@ int main() {
   for (int i = 0; i < lim; i++) {
     if (fgets(cmail[i], 50, stdin) != NULL) {
       cmail[i][strcspn(cmail[i], "\n")] = '\0';
-      val(camil[i]);
+      val(cmail[i]);
     }}
   check(lim);
   printf("\nUnique Emails:\n");
@@ -34,3 +34,19 @@ int main() {
     }}
   return 0;
 }
+
+/*
+   (Max limit=50)
+   Enter number of emails: 5
+   afsgafsgs
+   gfafgasfh
+   afsgafsgs
+   fhafh
+   ha
+
+   Unique Emails:
+   afsgafsgs
+   gfafgasfh
+   fhafh
+   ha
+ */

@@ -34,3 +34,21 @@ int main(){
   printf("\n");
   return 0;
 }
+
+
+/*
+Enter the input string:qwert123!@gd
+
+q - consonant
+w - consonant
+e - vowel
+r - consonant
+t - consonant
+1 - digit
+2 - digit
+3 - digit
+! - other character.
+@ - other character.
+g - consonant
+d - consonant
+*/

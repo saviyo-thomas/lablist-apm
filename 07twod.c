@@ -89,3 +89,155 @@ int main(){
  }}
   return 0;
 }
+
+/*
+
+   First array
+   Enter element[0][0] :5
+
+   Enter element[0][1] :1
+
+   Enter element[0][2] :4
+
+   Enter element[0][3] :6
+
+   Enter element[0][4] :8
+
+   Enter element[1][0] :9
+
+   Enter element[1][1] :2
+
+   Enter element[1][2] :4
+
+   Enter element[1][3] :3
+
+   Enter element[1][4] :5
+
+   Enter element[2][0] :8
+
+   Enter element[2][1] :4
+
+   Enter element[2][2] :56
+
+   Enter element[2][3] :4
+
+   Enter element[2][4] :5
+
+   Enter element[3][0] :5
+
+   Enter element[3][1] :5
+
+   Enter element[3][2] :25
+
+   Enter element[3][3] :56
+
+   Enter element[3][4] :56
+
+   Enter element[4][0] :9
+
+   Enter element[4][1] :237
+
+   Enter element[4][2] :4
+
+   Enter element[4][3] :2
+
+   Enter element[4][4] :8
+
+   1.search an element
+   2.find row sum
+   3.find column sum
+   4.diagonal sum
+   5.transpose the matrix
+   6.print
+   7.Exit
+   Enter your choice :1
+
+   Enter search key :54
+   Value not found
+   1.search an element
+   2.find row sum
+   3.find column sum
+   4.diagonal sum
+   5.transpose the matrix
+   6.print
+   7.Exit
+Enter your choice :6
+
+        5               1               4               6               8
+        9               2               4               3               5
+        8               4               56              4               5
+        5               5               25              56              56
+        9               237             4               2               8
+
+                                        1.search an element
+                                        2.find row sum
+                                        3.find column sum
+                                        4.diagonal sum
+                                        5.transpose the matrix
+                                        6.print
+                                        7.Exit
+                                        Enter your choice :1
+
+                                        Enter search key :56
+
+                                         Value found at a[2][2]
+                                         1.search an element
+                                         2.find row sum
+                                         3.find column sum
+                                         4.diagonal sum
+                                         5.transpose the matrix
+                                         6.print
+                                         7.Exit
+                                         Enter your choice :2
+
+                                         Enter the row(0-4) :0
+
+                                                             Sum of row 0 : 24
+                                                             1.search an element
+                                                             2.find row sum
+                                                             3.find column sum
+                                                             4.diagonal sum
+                                                             5.transpose the matrix
+                                                             6.print
+                                                             7.Exit
+                                                             Enter your choice :3
+
+                                                             Enter the column(0-4)3
+
+                                                             Sum of column 3 : 71
+                                                             1.search an element
+                                                             2.find row sum
+                                                             3.find column sum
+                                                             4.diagonal sum
+                                                             5.transpose the matrix
+                                                             6.print
+                                                             7.Exit
+                                                             Enter your choice :4
+
+                                                             Sum of diagonal elements : 127
+                                                             1.search an element
+                                                             2.find row sum
+                                                             3.find column sum
+                                                             4.diagonal sum
+                                                             5.transpose the matrix
+                                                             6.print
+                                                             7.Exit
+                                                             Enter your choice :5
+
+                                                             Transposed array
+                                                             5               9               8               5               9
+                                                             1               2               4               5               237
+                                                             4               4               56              25              4
+                                                             6               3               4               56              2
+                                                             8               5               5               56              8
+
+                                                                                                     1.search an element
+                                                                                                     2.find row sum
+                                                                                                     3.find column sum
+                                                                                                     4.diagonal sum
+                                                                                                     5.transpose the matrix
+                                                                                                     6.print
+                                                                                                     7.Exit
+                                                                                                     Enter your choice :7
+
+                                                                                                     */
