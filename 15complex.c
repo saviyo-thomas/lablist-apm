@@ -67,3 +67,19 @@ int main() {
 
     return 0;
 }
+
+/*
+Enter first complex number:
+Enter real part: 4
+Enter imaginary part: 2
+
+Enter second complex number:
+Enter real part: 8
+Enter imaginary part: 6
+
+First complex number: 4.00 + 2.00i
+Second complex number: 8.00 + 6.00i
+
+Sum: 12.00 + 8.00i
+Difference: -4.00 - 4.00i
+*/
