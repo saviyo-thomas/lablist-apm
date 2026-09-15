@@ -6,21 +6,14 @@ char cmail[LIM][50];
 
 void check(int s) {
   for (int i = 0; i < s; i++) {
-    // Skip if already marked as a duplicate
+
     if (cmail[i][0] == '\0') continue; 
     
     for (int j = i + 1; j < s; j++) {
       if (strcmp(cmail[i], cmail[j]) == 0) {
-        // Mark duplicate as empty by null-terminating the first character
+       
         cmail[j][0] = '\0'; 
-      }
-    }
-  }
-}
-
-void val(char a[50]) {
-    // Placeholder: You can add validation logic here later
-}
+}}}}
 
 int main() {
   int lim;
@@ -29,11 +22,9 @@ int main() {
   if (scanf("%d", &lim) != 1 || lim > LIM || lim <= 0) {
       return 1;
   }
-  getchar(); // Consume the trailing newline left by scanf
-  
+  getchar();   
   for (int i = 0; i < lim; i++) {
     if (fgets(cmail[i], 50, stdin) != NULL) {
-      // Safely strip the newline character added by fgets
       cmail[i][strcspn(cmail[i], "\n")] = '\0';
       val(cmail[i]);
     }
@@ -50,3 +41,20 @@ int main() {
   
   return 0;
 }
+
+/*
+
+   (Max limit=50)
+   Enter number of emails: 5
+   saviyothomas@gmail.com
+   sfg@yahoo.in
+   saviyothomas@gmail.com
+   sfg@yahoo.in
+   adgad@prot.cm
+   \
+   Unique Emails:
+   saviyothomas@gmail.com
+   sfg@yahoo.in
+   adgad@prot.cm
+   */
+
