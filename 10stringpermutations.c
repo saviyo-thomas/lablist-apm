@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-// Function to swap two characters
+
 void swap(char *x, char *y) {
     char temp;
     temp = *x;
@@ -9,28 +9,17 @@ void swap(char *x, char *y) {
     *y = temp;
 }
 
-// Recursive function to generate permutations
 void permute(char *str, int start, int end) {
     int i;
-    if (start == end) {
-        // Base case: if start equals end, a permutation is complete
-        printf("%s\n", str);
-    } else {
-        // Recursive case: iterate through characters from start to end
-        for (i = start; i <= end; i++) {
-            // Swap current character with the character at 'start'
-            swap((str + start), (str + i));
-            // Recursively call permute for the next position
-            permute(str, start + 1, end);
-            // Backtrack: swap back to restore the original string
-            // This is crucial to get all permutations without duplicates
-            swap((str + start), (str + i));
-        }
-    }
-}
+    if (start == end) {printf("%s\t", str);} 
+    else {for (i = start; i <= end; i++) {
+      swap((str + start), (str + i));
+      permute(str, start + 1, end);
+      swap((str + start), (str + i));
+}}}
 
 int main() {
-    char str[100]; // Assume max string length of 99 characters + null terminator
+    char str[100];
 
     printf("Enter a string: ");
     scanf("%s", str);
@@ -42,3 +31,12 @@ int main() {
 
     return 0;
 }
+
+/*
+   Enter a string: poke
+
+   Permutations of 'poke':
+   poke    poek    pkoe    pkeo    peko    peok    opke    opek
+   okpe    okep    oekp    oepk    kope    koep    kpoe    kpeo
+   kepo    keop    eokp    eopk    ekop    ekpo    epko    epok
+ */
