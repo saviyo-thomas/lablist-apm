@@ -1,4 +1,4 @@
-Code
+//Code
 #include <stdio.h>
 #include <string.h>
 
@@ -32,8 +32,8 @@ int main() {
 
     return 0;
 }
-Output
 /*
+ Output
    Enter a string: poke
 
    Permutations of 'poke':
