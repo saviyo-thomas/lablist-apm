@@ -1,6 +1,6 @@
 /*
 Name: Saviyo Thomas
-Roll No: CS12
+Roll No: CS11
 Date: 18/09/2026
 AIM: Implement matrix multiplication to apply a transformation matrix to an image. The program should accept a 2D image matrix and a transformation matrix, then output the transformed image.
 ALGORITHM:

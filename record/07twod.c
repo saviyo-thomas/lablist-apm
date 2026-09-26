@@ -1,6 +1,6 @@
 /*
 Name: Saviyo Thomas
-Roll No: CS12
+Roll No: CS11
 Date: 07/09/2026
 AIM: Write a program to perform matrix operations that calculate the row sum, column sum, and diagonal sum of a financial transaction matrix. Additionally, include a function to transpose the matrix for further analysis.
 ALGORITHM:

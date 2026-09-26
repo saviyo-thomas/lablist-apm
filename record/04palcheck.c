@@ -1,6 +1,6 @@
 /*
 Name: Saviyo Thomas
-Roll No: CS12
+Roll No: CS11
 Date: 06/08/2026
 AIM: Write a program to check if a given set of product codes (stored as strings in a database) are palindromes, and generate a report of the results.
 ALGORITHM:

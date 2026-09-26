@@ -1,6 +1,6 @@
 /*
 Name: Saviyo Thomas
-Roll No: CS12
+Roll No: CS11
 Date: 23/07/2026
 AIM: Create a program that takes a list of customer email addresses (stored in an array) and removes any duplicates, ensuring that each email address is only represented once.
 ALGORITHM:

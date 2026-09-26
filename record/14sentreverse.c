@@ -1,6 +1,6 @@
 /*
 Name: Saviyo Thomas
-Roll No: CS12
+Roll No: CS11
 Date: 26/09/2026
 AIM: Write a program that reverses the words of a sentence, using recursion. This could be applied in a speech-to-text application where the order of words needs to be reversed for analysis.
 ALGORITHM:

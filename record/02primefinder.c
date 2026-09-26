@@ -1,6 +1,6 @@
 /*
 Name: Saviyo Thomas
-Roll No: CS12
+Roll No: CS11
 Date: 28/09/2026
 AIM: Write a program that scans a list of numbers and identifies which ones are prime. It should store the prime numbers separately for further processing.
 ALGORITHM:
