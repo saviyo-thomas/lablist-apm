@@ -1,16 +1,21 @@
 /*
 Name: Saviyo Thomas
 Roll No: CS11
-Date: 14/08/2026
-AIM: Create an application to manage employee data using structures. The program should allow input, display, and update employee details such as name, ID, salary, and department.
-ALGORITHM:
-Step 1: Start
-Step 2: Define employee structure with name, id, salary, department and array of 50 with count
-Step 3: Display menu repeatedly: 1.Enter details 2.Update details 3.Display details 4.Exit
-Step 4: For input read name, id, department, salary and append via ip, for update search by id and edit selected field, for display print table
-Step 5: On choice 4 exit
-Step 6: Stop
+Date: 14-08-2026
+
+Experiment No: 16
+
+Heading: Employee Management using Structures
+
+Aim: Create an application to manage employee data using structures. The program should allow input, display, and update employee details such as name, ID, salary, and department.
+
+********Algorithm***********
+1. Define employee structure with name, id, salary, department and array with count.
+2. Display menu repeatedly for input, update, display and exit.
+3. For input read details and append, for update search by id and edit selected field, for display print table.
+4. Exit on choice 4.
 */
+/* ************SOURCE CODE************ */
 #include <stdio.h>
 #include <string.h>
 
@@ -155,15 +160,9 @@ int main() {
 }
 
 /*
-Input:
-1, saviyo, 78, cs, 45000.50 (add)
-1, johny, 1145, phy, 7800 (add)
-3 (display)
-2, 87 (update not found)
-2, 78, 2, 5578 (update ID)
-3 (display)
-4 (exit)
-Output:
+************OUTPUT************
+CS2024PG01@csserver:~/lablist$ gcc 16employeemngmnt.c -o 16employeemngmnt
+CS2024PG01@csserver:~/lablist$ ./16employeemngmnt
 
 ------Menu------
 1. Enter employee details
@@ -239,5 +238,5 @@ johny                1145       phy             7800.00
 2. Update employee details
 3. Display employee details
 4. Exit
-Enter choice:
+Enter choice: 
 */

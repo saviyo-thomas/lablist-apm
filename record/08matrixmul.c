@@ -1,16 +1,21 @@
 /*
 Name: Saviyo Thomas
 Roll No: CS11
-Date: 18/09/2026
-AIM: Implement matrix multiplication to apply a transformation matrix to an image. The program should accept a 2D image matrix and a transformation matrix, then output the transformed image.
-ALGORITHM:
-Step 1: Start
-Step 2: Read first 5x5 matrix a and second 5x5 matrix b
-Step 3: Initialize result matrix c to zero
-Step 4: For i=0 to 4, for j=0 to 4, for k=0 to 4 compute c[i][j]+=a[i][k]*b[k][j]
-Step 5: Display matrices a, b and result c
-Step 6: Stop
+Date: 18-09-2026
+
+Experiment No: 8
+
+Heading: Matrix Multiplication for Image Transformation
+
+Aim: Implement matrix multiplication to apply a transformation matrix to an image. The program should accept a 2D image matrix and a transformation matrix, then output the transformed image.
+
+********Algorithm***********
+1. Read two 5x5 matrices a and b.
+2. Initialise result matrix c to zero.
+3. For i, j, k compute c[i][j]+=a[i][k]*b[k][j].
+4. Display a, b and result c.
 */
+/* ************SOURCE CODE************ */
 #include<stdio.h>
 #define m 5
 
@@ -61,20 +66,9 @@ int main(){
 }
 
 /*
-Input:
-Matrix A:
-1 2 6 3 5
-8 5 5 6 3
-4 3 5 8 6
-1 2 8 2 1
-5 6 2 7 3
-Matrix B:
-6 7 5 8 3
-7 7 5 2 5
-7 4 8 2 9
-4 2 5 6 8
-2 5 6 3 4
-Output:
+************OUTPUT************
+CS2024PG01@csserver:~/lablist$ gcc 08matrixmul.c -o 08matrixmul
+CS2024PG01@csserver:~/lablist$ ./08matrixmul
 
 First array
 Enter elements separated by space
@@ -104,5 +98,5 @@ Multiplication result
 	[148]		[138]		[153]		[129]		[154]	
 	[124]		[115]		[151]		[114]		[160]	
 	[86]		[62]		[95]		[43]		[105]	
-	[120]		[114]		[124]		[107]		[131]
+	[120]		[114]		[124]		[107]		[131]	
 */

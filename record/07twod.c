@@ -1,16 +1,21 @@
 /*
 Name: Saviyo Thomas
 Roll No: CS11
-Date: 07/09/2026
-AIM: Write a program to perform matrix operations that calculate the row sum, column sum, and diagonal sum of a financial transaction matrix. Additionally, include a function to transpose the matrix for further analysis.
-ALGORITHM:
-Step 1: Start
-Step 2: Read 5x5 matrix elements
-Step 3: Display menu repeatedly: 1.Search 2.Row sum 3.Column sum 4.Diagonal sum 5.Transpose 6.Print 7.Exit
-Step 4: Search by linear scan for key and report position, row sum by adding selected row, column sum by adding selected column, diagonal sum by adding t[i][i], transpose by b[i][j]=t[j][i]
-Step 5: On choice 7 exit
-Step 6: Stop
+Date: 07-09-2026
+
+Experiment No: 7
+
+Heading: Row Column Diagonal Sum and Transpose of Matrix
+
+Aim: Write a program to perform matrix operations that calculate the row sum, column sum, and diagonal sum of a financial transaction matrix. Additionally, include a function to transpose the matrix for further analysis.
+
+********Algorithm***********
+1. Read 5x5 matrix elements.
+2. Display menu repeatedly for search, row sum, column sum, diagonal sum, transpose, print and exit.
+3. Search by linear scan, row sum by adding selected row, column sum by adding selected column, diagonal sum by adding t[i][i], transpose by b[i][j]=t[j][i].
+4. Exit on choice 7.
 */
+/* ************SOURCE CODE************ */
 //program for 2d array operations
 
 #include<stdio.h>
@@ -104,21 +109,9 @@ int main(){
 }
 
 /*
-Input:
-5 1 4 6 8
-9 2 4 3 5
-8 4 56 4 5
-5 5 25 56 56
-9 237 4 2 8
-1, 54 (search not found)
-6 (print)
-1, 56 (search found)
-2, 0 (row sum)
-3, 3 (column sum)
-4 (diagonal sum)
-5 (transpose)
-7 (exit)
-Output:
+************OUTPUT************
+CS2024PG01@csserver:~/lablist$ gcc 07twod.c -o 07twod
+CS2024PG01@csserver:~/lablist$ ./07twod
 
 First array
 Enter element[0][0] :

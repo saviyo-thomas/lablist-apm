@@ -1,16 +1,21 @@
 /*
 Name: Saviyo Thomas
 Roll No: CS11
-Date: 18/07/2026
-AIM: Develop a program that allows the user to input two complex numbers and calculates their sum and difference. This program could be applied in simulations for electrical engineering or physics problems.
-ALGORITHM:
-Step 1: Start
-Step 2: Define structure with real and imag parts
-Step 3: Read two complex numbers with getComp
-Step 4: Compute sum by adding real parts and imag parts, difference by subtracting real parts and imag parts
-Step 5: Display both numbers and their sum and difference
-Step 6: Stop
+Date: 18-07-2026
+
+Experiment No: 15
+
+Heading: Complex Number Operations using Structures
+
+Aim: Develop a program that allows the user to input two complex numbers and calculates their sum and difference. This program could be applied in simulations for electrical engineering or physics problems.
+
+********Algorithm***********
+1. Define structure with real and imag parts.
+2. Read two complex numbers with real and imaginary parts.
+3. Compute sum by adding parts and difference by subtracting parts.
+4. Display both numbers, sum and difference.
 */
+/* ************SOURCE CODE************ */
 #include <stdio.h>
 
 typedef struct {
@@ -78,12 +83,9 @@ int main() {
 }
 
 /*
-Input:
-4
-2
-8
-6
-Output:
+************OUTPUT************
+CS2024PG01@csserver:~/lablist$ gcc 15complex.c -o 15complex
+CS2024PG01@csserver:~/lablist$ ./15complex
 Enter first complex number:
 Enter real part: Enter imaginary part: 
 Enter second complex number:

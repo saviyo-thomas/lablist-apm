@@ -1,18 +1,21 @@
 /*
 Name: Saviyo Thomas
 Roll No: CS11
-Date: 01/07/2026
-AIM: Write a program to develop a simple text analysis tool that takes an input string and categorizes each character as a vowel, consonant, or other (special character, number, etc.) using a switch statement.
-ALGORITHM:
-Step 1: Start
-Step 2: Read an input string using fgets
-Step 3: For each character until '\0' or '\n' repeat Steps 4-6
-Step 4: If character is an alphabet, convert to lowercase and use switch to check a, e, i, o, u for vowel else consonant
-Step 5: Else if character is a digit, classify as digit
-Step 6: Else classify as other character
-Step 7: Display the category of each character
-Step 8: Stop
+Date: 01-07-2026
+
+Experiment No: 1
+
+Heading: Character Analysis using Switch Statement
+
+Aim: Write a program to develop a simple text analysis tool that takes an input string and categorizes each character as a vowel, consonant, or other (special character, number, etc.) using a switch statement.
+
+********Algorithm***********
+1. Read input string using fgets.
+2. For each character until '\0' or newline check its type.
+3. If alphabet convert to lowercase and use switch for a, e, i, o, u to print vowel else consonant.
+4. Else if digit print digit else print other character.
 */
+/* ************SOURCE CODE************ */
 // program to categorize a string characters into vowels, consonants, special characters and numbers
 
 #include<stdio.h>
@@ -51,9 +54,9 @@ int main(){
 }
 
 /*
-Input:
-qwert123!@gd
-Output:
+************OUTPUT************
+CS2024PG01@csserver:~/lablist$ gcc 01characteranalysis.c -o 01characteranalysis
+CS2024PG01@csserver:~/lablist$ ./01characteranalysis
 
 Enter the input string:
 q - consonant

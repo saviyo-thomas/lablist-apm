@@ -1,16 +1,21 @@
 /*
 Name: Saviyo Thomas
 Roll No: CS11
-Date: 13/09/2026
-AIM: Create an application that implements a suite of string functions like concatenation, comparison, and conversion (uppercase to lowercase), which can be applied to a list of user-provided strings.
-ALGORITHM:
-Step 1: Start
-Step 2: Read number of strings and read the strings
-Step 3: Display menu repeatedly: 1.Display 2.Concatenate 3.Compare 4.Convert case 5.Exit
-Step 4: Concatenate selected indices with snprintf, compare with strcmp, convert case copy with tolower/toupper
-Step 5: On choice 5 exit
-Step 6: Stop
+Date: 13-09-2026
+
+Experiment No: 11
+
+Heading: String Utility Suite Concatenation Comparison Conversion
+
+Aim: Create an application that implements a suite of string functions like concatenation, comparison, and conversion (uppercase to lowercase), which can be applied to a list of user-provided strings.
+
+********Algorithm***********
+1. Read count and read count strings.
+2. Display menu repeatedly for display, concatenate, compare, convert case and exit.
+3. Concatenate selected indices, compare with strcmp, convert case with tolower/toupper.
+4. Exit on choice 5.
 */
+/* ************SOURCE CODE************ */
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -160,19 +165,9 @@ int main() {
 }
 
 /*
-Input:
-3
-saviyo
-thomas
-dizooza
-1 (display)
-2, 1, 2 (concatenate)
-1 (display)
-4, 3, 2 (uppercase)
-1 (display)
-3, 1, 2 (compare)
-5 (exit)
-Output:
+************OUTPUT************
+CS2024PG01@csserver:~/lablist$ gcc 11stringmenu.c -o 11stringmenu
+CS2024PG01@csserver:~/lablist$ ./11stringmenu
 String Utility Suite
 --------------------
 Enter the number of strings to input (max 10): Enter 3 strings:

@@ -1,17 +1,21 @@
 /*
 Name: Saviyo Thomas
 Roll No: CS11
-Date: 28/09/2026
-AIM: Write a program that scans a list of numbers and identifies which ones are prime. It should store the prime numbers separately for further processing.
-ALGORITHM:
-Step 1: Start
-Step 2: Read number of elements lim and read lim numbers into array inp
-Step 3: For each number inp[a] set flag fl=1
-Step 4: For b=2 to inp[a]-1, if inp[a]%b==0 set fl=0
-Step 5: If fl==1 store inp[a] in prime array op and increment opcount
-Step 6: Display all numbers stored in op
-Step 7: Stop
+Date: 28-09-2026
+
+Experiment No: 2
+
+Heading: Prime Number Finder from List
+
+Aim: Write a program that scans a list of numbers and identifies which ones are prime. It should store the prime numbers separately for further processing.
+
+********Algorithm***********
+1. Read limit lim and read lim numbers into array.
+2. For each number set flag=1 and for b=2 to num-1 if num%b==0 set flag=0.
+3. If flag==1 store number in prime array.
+4. Display prime array.
 */
+/* ************SOURCE CODE************ */
 //to identufy prime numbers and separate them
 
 #include<stdio.h>
@@ -46,14 +50,9 @@ int main(){
 }
 
 /*
-Input:
-5
-12
-13
-758
-2
-8651
-Output:
+************OUTPUT************
+CS2024PG01@csserver:~/lablist$ gcc 02primefinder.c -o 02primefinder
+CS2024PG01@csserver:~/lablist$ ./02primefinder
 
 Enter how many numbers to be inserted :
 Enter numbers: 

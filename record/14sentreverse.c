@@ -1,15 +1,20 @@
 /*
 Name: Saviyo Thomas
 Roll No: CS11
-Date: 26/09/2026
-AIM: Write a program that reverses the words of a sentence, using recursion. This could be applied in a speech-to-text application where the order of words needs to be reversed for analysis.
-ALGORITHM:
-Step 1: Start
-Step 2: Read a sentence and remove trailing newline
-Step 3: Call reversewords with start index of first word
-Step 4: In reversewords find end of current word at space or '\0', recurse on next word first, then print current word followed by space
-Step 5: Stop
+Date: 26-09-2026
+
+Experiment No: 14
+
+Heading: Sentence Word Reverse using Recursion
+
+Aim: Write a program that reverses the words of a sentence, using recursion. This could be applied in a speech-to-text application where the order of words needs to be reversed for analysis.
+
+********Algorithm***********
+1. Read sentence with fgets and remove newline.
+2. Call reversewords with start index of first word.
+3. Find end of current word at space or '\0', recurse on next word first, then print current word followed by space.
 */
+/* ************SOURCE CODE************ */
 #include <stdio.h>
 #include <string.h>
 
@@ -49,8 +54,8 @@ int main() {
 }
 
 /*
-Input:
-when i grow up i wanna be like wiz khaleefa
-Output:
+************OUTPUT************
+CS2024PG01@csserver:~/lablist$ gcc 14sentreverse.c -o 14sentreverse
+CS2024PG01@csserver:~/lablist$ ./14sentreverse
 enter a sentence:reversed word order:khaleefa wiz like be wanna i up grow i when
 */

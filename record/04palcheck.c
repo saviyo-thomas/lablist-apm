@@ -1,16 +1,21 @@
 /*
 Name: Saviyo Thomas
 Roll No: CS11
-Date: 06/08/2026
-AIM: Write a program to check if a given set of product codes (stored as strings in a database) are palindromes, and generate a report of the results.
-ALGORITHM:
-Step 1: Start
-Step 2: Read a set of strings and remove trailing newline
-Step 3: For each string call ispal function
-Step 4: In ispal set l=0 and r=len-1, while r>l compare str[l] and str[r], if unequal return 0 else l++ and r--
-Step 5: If ispal returns 1 display string is palindrome else display not a palindrome
-Step 6: Stop
+Date: 06-08-2026
+
+Experiment No: 4
+
+Heading: Palindrome Check for Product Codes
+
+Aim: Write a program to check if a given set of product codes (stored as strings in a database) are palindromes, and generate a report of the results.
+
+********Algorithm***********
+1. Read 4 strings with fgets and strip newline.
+2. For each string call ispal with l=0 and r=len-1.
+3. While r>l compare str[l] and str[r], return 0 on mismatch else l++ and r--.
+4. If return is 1 print palindrome else print not palindrome.
 */
+/* ************SOURCE CODE************ */
 #include<stdio.h>
 #include<string.h>
 #define s 4
@@ -45,12 +50,9 @@ int main(){
 }
 
 /*
-Input:
-asdfdafg
-asdffdsa
-xcbvfg
-malayalam
-Output:
+************OUTPUT************
+CS2024PG01@csserver:~/lablist$ gcc 04palcheck.c -o 04palcheck
+CS2024PG01@csserver:~/lablist$ ./04palcheck
 
  Enter Strings
 

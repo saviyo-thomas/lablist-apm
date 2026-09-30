@@ -1,15 +1,20 @@
 /*
 Name: Saviyo Thomas
 Roll No: CS11
-Date: 03/07/2026
-AIM: Develop a program to check if a given design (represented as a matrix) is symmetric. This program can be useful for analyzing symmetry in architectural or geometric design patterns.
-ALGORITHM:
-Step 1: Start
-Step 2: Read 5x5 matrix elements
-Step 3: For each i and j compare t[i][j] with t[j][i], if any mismatch return 0 else return 1
-Step 4: If result is 1 display matrix is symmetric else display not symmetric
-Step 5: Stop
+Date: 03-07-2026
+
+Experiment No: 9
+
+Heading: Symmetry Check for Matrix Design
+
+Aim: Develop a program to check if a given design (represented as a matrix) is symmetric. This program can be useful for analyzing symmetry in architectural or geometric design patterns.
+
+********Algorithm***********
+1. Read 5x5 matrix elements.
+2. For each i and j compare t[i][j] with t[j][i], return 0 on mismatch else 1.
+3. If result is 1 display symmetric else display not symmetric.
 */
+/* ************SOURCE CODE************ */
 //Program to check if given matrix is symmetric or not
 #include <stdio.h>
 #define m 5
@@ -48,13 +53,9 @@ int main() {
 }
 
 /*
-Input:
-1 2 3 4 5
-2 6 7 8 9
-3 7 10 11 12
-4 8 11 13 14
-5 9 12 14 15
-Output:
+************OUTPUT************
+CS2024PG01@csserver:~/lablist$ gcc 09symmetrycheck.c -o 09symmetrycheck
+CS2024PG01@csserver:~/lablist$ ./09symmetrycheck
 Enter elements separated by space:
 
 The matrix is symmetric

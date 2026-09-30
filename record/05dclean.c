@@ -1,16 +1,21 @@
 /*
 Name: Saviyo Thomas
 Roll No: CS11
-Date: 23/07/2026
-AIM: Create a program that takes a list of customer email addresses (stored in an array) and removes any duplicates, ensuring that each email address is only represented once.
-ALGORITHM:
-Step 1: Start
-Step 2: Read number of emails lim and read lim email strings, remove trailing newline
-Step 3: For each i from 0 to s-1 skip if already blank, compare with each j=i+1 to s-1 using strcmp
-Step 4: If cmail[i] equals cmail[j] mark cmail[j] as blank by setting first character to '\0'
-Step 5: Display all non-blank email addresses as unique emails
-Step 6: Stop
+Date: 23-07-2026
+
+Experiment No: 5
+
+Heading: Duplicate Removal from Email List
+
+Aim: Create a program that takes a list of customer email addresses (stored in an array) and removes any duplicates, ensuring that each email address is only represented once.
+
+********Algorithm***********
+1. Read limit lim and read lim email strings, strip newline.
+2. For each i skip if blank, compare with each j=i+1 using strcmp.
+3. If equal mark duplicate by setting cmail[j][0]='\0'.
+4. Display all non-blank emails.
 */
+/* ************SOURCE CODE************ */
 #include <stdio.h>
 #include <string.h>
 #define LIM 50
@@ -55,14 +60,9 @@ int main() {
 }
 
 /*
-Input:
-5
-saviyothomas@gmail.com
-sfg@yahoo.in
-saviyothomas@gmail.com
-sfg@yahoo.in
-adgad@prot.cm
-Output:
+************OUTPUT************
+CS2024PG01@csserver:~/lablist$ gcc 05dclean.c -o 05dclean
+CS2024PG01@csserver:~/lablist$ ./05dclean
 
 (Max limit=50)
 Enter number of emails: 
