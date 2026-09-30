@@ -15,7 +15,9 @@ Aim: Develop a program that allows the user to input two complex numbers and cal
 3. Compute sum by adding parts and difference by subtracting parts.
 4. Display both numbers, sum and difference.
 */
+
 /* ************SOURCE CODE************ */
+
 #include <stdio.h>
 
 typedef struct {
@@ -87,12 +89,17 @@ int main() {
 CS2024PG01@csserver:~/lablist$ gcc 15complex.c -o 15complex
 CS2024PG01@csserver:~/lablist$ ./15complex
 Enter first complex number:
-Enter real part: Enter imaginary part: 
-Enter second complex number:
-Enter real part: Enter imaginary part: 
-First complex number: 4.00 + 2.00i
-Second complex number: 8.00 + 6.00i
+Enter real part: 3 
+Enter imaginary part: 2
 
-Sum: 12.00 + 8.00i
-Difference: -4.00 - 4.00i
+Enter second complex number:
+Enter real part: 5 
+Enter imaginary part: 1
+
+First complex number: 3.00 + 2.00i
+Second complex number: 5.00 + 1.00i
+
+Sum: 8.00 + 3.00i
+Difference: -2.00 + 1.00i
+
 */

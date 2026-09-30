@@ -15,6 +15,7 @@ Aim: Write a program that scans a list of numbers and identifies which ones are 
 3. If flag==1 store number in prime array.
 4. Display prime array.
 */
+
 /* ************SOURCE CODE************ */
 //to identufy prime numbers and separate them
 
@@ -54,11 +55,17 @@ int main(){
 CS2024PG01@csserver:~/lablist$ gcc 02primefinder.c -o 02primefinder
 CS2024PG01@csserver:~/lablist$ ./02primefinder
 
-Enter how many numbers to be inserted :
-Enter numbers: 
-Enter numbers: 
-Enter numbers: 
-Enter numbers: 
-Enter numbers: 
-List of prime numbers   13  2
+Enter how many numbers to be inserted :5
+
+Enter numbers: 1452
+
+Enter numbers: 452
+
+Enter numbers: 2
+
+Enter numbers: 8478
+
+Enter numbers: 13
+
+List of prime numbers   2  13
 */

@@ -15,6 +15,7 @@ Aim: Write a program to develop a simple text analysis tool that takes an input 
 3. If alphabet convert to lowercase and use switch for a, e, i, o, u to print vowel else consonant.
 4. Else if digit print digit else print other character.
 */
+
 /* ************SOURCE CODE************ */
 // program to categorize a string characters into vowels, consonants, special characters and numbers
 

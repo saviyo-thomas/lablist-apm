@@ -14,6 +14,7 @@ Aim: Write a program that generates all possible permutations of a given string,
 2. Call permute with start=0 and end=n-1.
 3. If start==end print string else for i=start to end swap start and i, recurse with start+1, then swap back.
 */
+
 /* ************SOURCE CODE************ */
 #include <stdio.h>
 #include <string.h>

@@ -15,6 +15,7 @@ Aim: Implement matrix multiplication to apply a transformation matrix to an imag
 3. For i, j, k compute c[i][j]+=a[i][k]*b[k][j].
 4. Display a, b and result c.
 */
+
 /* ************SOURCE CODE************ */
 #include<stdio.h>
 #define m 5
@@ -69,34 +70,43 @@ int main(){
 ************OUTPUT************
 CS2024PG01@csserver:~/lablist$ gcc 08matrixmul.c -o 08matrixmul
 CS2024PG01@csserver:~/lablist$ ./08matrixmul
-
 First array
 Enter elements separated by space
+1 4 5 2 6
+7 5 2 6 7 
+2 1 8 3 6
+4 5 8 2 6
+1 3 4 9 6
+
 
 Second array
 Enter elements separated by space
-
+1 2 5 3 8
+7 4 8 6 4
+1 2 6 8 3
+1 2 3 7 6
+4 8 5 6 4
 First array
 
-	[1]		[2]		[6]		[3]		[5]	
-	[8]		[5]		[5]		[6]		[3]	
-	[4]		[3]		[5]		[8]		[6]	
-	[1]		[2]		[8]		[2]		[1]	
-	[5]		[6]		[2]		[7]		[3]	
+	[1]		[4]		[5]		[2]		[6]	
+	[7]		[5]		[2]		[6]		[7]	
+	[2]		[1]		[8]		[3]		[6]	
+	[4]		[5]		[8]		[2]		[6]	
+	[1]		[3]		[4]		[9]		[6]	
 
 Second array
 
-	[6]		[7]		[5]		[8]		[3]	
-	[7]		[7]		[5]		[2]		[5]	
-	[7]		[4]		[8]		[2]		[9]	
-	[4]		[2]		[5]		[6]		[8]	
-	[2]		[5]		[6]		[3]		[4]	
+	[1]		[2]		[5]		[3]		[8]	
+	[7]		[4]		[8]		[6]		[4]	
+	[1]		[2]		[6]		[8]		[3]	
+	[1]		[2]		[3]		[7]		[6]	
+	[4]		[8]		[5]		[6]		[4]	
 
 Multiplication result
 
-	[84]		[76]		[108]		[57]		[111]	
-	[148]		[138]		[153]		[129]		[154]	
-	[124]		[115]		[151]		[114]		[160]	
-	[86]		[62]		[95]		[43]		[105]	
-	[120]		[114]		[124]		[107]		[131]	
+	[60]		[80]		[103]		[117]		[75]	
+	[78]		[106]		[140]		[151]		[146]	
+	[44]		[78]		[105]		[133]		[86]	
+	[73]		[96]		[144]		[156]		[112]	
+	[59]		[88]		[110]		[152]		[110]	
 */

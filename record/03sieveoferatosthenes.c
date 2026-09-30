@@ -15,6 +15,7 @@ Aim: Implement the Sieve of Eratosthenes algorithm to generate a list of prime n
 3. For i=2 to lim-1 if p[i] is true mark multiples j=i*i to lim-1 as false.
 4. Display all r where p[r] is true.
 */
+
 /* ************SOURCE CODE************ */
 #include<stdio.h>
 #include<stdbool.h>

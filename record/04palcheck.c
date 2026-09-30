@@ -15,6 +15,7 @@ Aim: Write a program to check if a given set of product codes (stored as strings
 3. While r>l compare str[l] and str[r], return 0 on mismatch else l++ and r--.
 4. If return is 1 print palindrome else print not palindrome.
 */
+
 /* ************SOURCE CODE************ */
 #include<stdio.h>
 #include<string.h>
@@ -55,9 +56,13 @@ CS2024PG01@csserver:~/lablist$ gcc 04palcheck.c -o 04palcheck
 CS2024PG01@csserver:~/lablist$ ./04palcheck
 
  Enter Strings
+asdfaf
+asdsa
+gfha
+malayalam
 
-asdfdafg is not a palindrome
-asdffdsa is palindrome
-xcbvfg is not a palindrome
+asdfaf is not a palindrome
+asdsa is palindrome
+gfha is not a palindrome
 malayalam is palindrome
 */

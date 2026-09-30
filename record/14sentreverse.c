@@ -57,5 +57,6 @@ int main() {
 ************OUTPUT************
 CS2024PG01@csserver:~/lablist$ gcc 14sentreverse.c -o 14sentreverse
 CS2024PG01@csserver:~/lablist$ ./14sentreverse
-enter a sentence:reversed word order:khaleefa wiz like be wanna i up grow i when
+enter a sentence:when i gro up i wanna be like wiz Khalifa
+reversed word order:Khalifa wiz like be wanna i up gro i when
 */

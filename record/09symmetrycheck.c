@@ -14,6 +14,7 @@ Aim: Develop a program to check if a given design (represented as a matrix) is s
 2. For each i and j compare t[i][j] with t[j][i], return 0 on mismatch else 1.
 3. If result is 1 display symmetric else display not symmetric.
 */
+
 /* ************SOURCE CODE************ */
 //Program to check if given matrix is symmetric or not
 #include <stdio.h>
@@ -57,6 +58,12 @@ int main() {
 CS2024PG01@csserver:~/lablist$ gcc 09symmetrycheck.c -o 09symmetrycheck
 CS2024PG01@csserver:~/lablist$ ./09symmetrycheck
 Enter elements separated by space:
+1 1 1 1 1
+1 2 2 2 2
+1 2 3 3 3
+1 2 3 4 4
+1 2 3 4 5
 
 The matrix is symmetric
+
 */

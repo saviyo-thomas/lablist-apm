@@ -15,8 +15,10 @@ Aim: Write a program to perform matrix operations that calculate the row sum, co
 3. Search by linear scan, row sum by adding selected row, column sum by adding selected column, diagonal sum by adding t[i][i], transpose by b[i][j]=t[j][i].
 4. Exit on choice 7.
 */
+
 /* ************SOURCE CODE************ */
 //program for 2d array operations
+
 
 #include<stdio.h>
 
@@ -68,11 +70,10 @@ void diasum(int t[5][5]){
   printf("\nSum of diagonal elements : %d",sum);
   return;
 }
-
 void tra(int t[5][5]){
    printf("\n");
    for(int i=0;i<5;i++){ for(int j=0;j<5;j++){
-     printf("\t%d\t",t[i][j]);
+    printf("\t%d\t",t[i][j]);
    } printf("\n");}
    return;
 }
@@ -80,7 +81,7 @@ void tra(int t[5][5]){
 void trans(int t[5][5]){
   int b[5][5];
   for(int i=0;i<5;i++){ for(int j=0;j<5;j++){
-    b[i][j]=t[j][i];
+   b[i][j]=t[j][i];
   }}
   printf("\nTransposed array");
   tra(b);
@@ -88,7 +89,7 @@ void trans(int t[5][5]){
 }
 
 int main(){
- printf("\nFirst array");
+  printf("\nFirst array");
   gtel(a);
   clr();
   int ch;
@@ -114,53 +115,57 @@ CS2024PG01@csserver:~/lablist$ gcc 07twod.c -o 07twod
 CS2024PG01@csserver:~/lablist$ ./07twod
 
 First array
-Enter element[0][0] :
-Enter element[0][1] :
-Enter element[0][2] :
-Enter element[0][3] :
-Enter element[0][4] :
-Enter element[1][0] :
-Enter element[1][1] :
-Enter element[1][2] :
-Enter element[1][3] :
-Enter element[1][4] :
-Enter element[2][0] :
-Enter element[2][1] :
-Enter element[2][2] :
-Enter element[2][3] :
-Enter element[2][4] :
-Enter element[3][0] :
-Enter element[3][1] :
-Enter element[3][2] :
-Enter element[3][3] :
-Enter element[3][4] :
-Enter element[4][0] :
-Enter element[4][1] :
-Enter element[4][2] :
+Enter element[0][0] :1
+
+Enter element[0][1] :7
+
+Enter element[0][2] :4
+
+Enter element[0][3] :5
+
+Enter element[0][4] :1
+
+Enter element[1][0] :5
+
+Enter element[1][1] :2
+
+Enter element[1][2] :5
+
+Enter element[1][3] :3
+
+Enter element[1][4] :9
+
+Enter element[2][0] :7
+
+Enter element[2][1] :4
+
+Enter element[2][2] :5
+
+Enter element[2][3] :8
+
+Enter element[2][4] :6
+
+Enter element[3][0] :4
+
+Enter element[3][1] :2
+
+Enter element[3][2] :5
+
+Enter element[3][3] :3
+
+Enter element[3][4] :1
+
+Enter element[4][0] :4
+
+Enter element[4][1] :5
+
+Enter element[4][2] :3
+
 Enter element[4][3] :
-Enter element[4][4] :
-1.search an element
-2.find row sum
-3.find column sum
-4.diagonal sum
-5.transpose the matrix
-6.print
-7.Exit
-Enter your choice :
-Enter search key :Value not found
-1.search an element
-2.find row sum
-3.find column sum
-4.diagonal sum
-5.transpose the matrix
-6.print
-7.Exit
-Enter your choice :
-	5		1		4		6		8	
-	9		2		4		3		5	
-	8		4		56		4		5	
-	5		5		25		56		56	
-	9		237		4		2		8	
+7
+
+Enter element[4][4] :8
+
 
 1.search an element
 2.find row sum
@@ -169,9 +174,11 @@ Enter your choice :
 5.transpose the matrix
 6.print
 7.Exit
-Enter your choice :
-Enter search key :
- Value found at a[2][2]
+Enter your choice :1
+
+Enter search key :7
+
+ Value found at a[0][1]
 1.search an element
 2.find row sum
 3.find column sum
@@ -179,9 +186,11 @@ Enter search key :
 5.transpose the matrix
 6.print
 7.Exit
-Enter your choice :
-Enter the row(0-4) :
-Sum of row 0 : 24
+Enter your choice :2
+
+Enter the row(0-4) :2
+
+Sum of row 2 : 30
 1.search an element
 2.find row sum
 3.find column sum
@@ -189,9 +198,11 @@ Sum of row 0 : 24
 5.transpose the matrix
 6.print
 7.Exit
-Enter your choice :
-Enter the column(0-4)
-Sum of column 3 : 71
+Enter your choice :3
+
+Enter the column(0-4)2
+
+Sum of column 2 : 22
 1.search an element
 2.find row sum
 3.find column sum
@@ -199,8 +210,9 @@ Sum of column 3 : 71
 5.transpose the matrix
 6.print
 7.Exit
-Enter your choice :
-Sum of diagonal elements : 127
+Enter your choice :4
+
+Sum of diagonal elements : 19
 1.search an element
 2.find row sum
 3.find column sum
@@ -208,13 +220,14 @@ Sum of diagonal elements : 127
 5.transpose the matrix
 6.print
 7.Exit
-Enter your choice :
+Enter your choice :5
+
 Transposed array
-	5		9		8		5		9	
-	1		2		4		5		237	
-	4		4		56		25		4	
-	6		3		4		56		2	
-	8		5		5		56		8	
+	1		5		7		4		4	
+	7		2		4		2		5	
+	4		5		5		5		3	
+	5		3		8		3		7	
+	1		9		6		1		8	
 
 1.search an element
 2.find row sum
@@ -223,5 +236,21 @@ Transposed array
 5.transpose the matrix
 6.print
 7.Exit
-Enter your choice :
+Enter your choice :6
+
+	1		7		4		5		1	
+	5		2		5		3		9	
+	7		4		5		8		6	
+	4		2		5		3		1	
+	4		5		3		7		8	
+
+1.search an element
+2.find row sum
+3.find column sum
+4.diagonal sum
+5.transpose the matrix
+6.print
+7.Exit
+Enter your choice :7
+
 */

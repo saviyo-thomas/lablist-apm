@@ -15,6 +15,7 @@ Aim: Create an application to manage employee data using structures. The program
 3. For input read details and append, for update search by id and edit selected field, for display print table.
 4. Exit on choice 4.
 */
+
 /* ************SOURCE CODE************ */
 #include <stdio.h>
 #include <string.h>
@@ -169,74 +170,65 @@ CS2024PG01@csserver:~/lablist$ ./16employeemngmnt
 2. Update employee details
 3. Display employee details
 4. Exit
-Enter choice: 
-Enter employee name: Enter employee id: Enter department: Enter salary: 
+Enter choice: 1
+
+Enter employee name: Fernando
+Enter employee id: 857
+Enter department: Management
+Enter salary: 450000
+
 ------Menu------
 1. Enter employee details
 2. Update employee details
 3. Display employee details
 4. Exit
-Enter choice: 
-Enter employee name: Enter employee id: Enter department: Enter salary: 
+Enter choice: 1
+
+Enter employee name: Ricardo
+Enter employee id: 264
+Enter department: Planning
+Enter salary: 7800
+
 ------Menu------
 1. Enter employee details
 2. Update employee details
 3. Display employee details
 4. Exit
-Enter choice: 
+Enter choice: 2
+
 Name                 ID         Department      Salary    
 ---------------------------------------------------------
-saviyo               78         cs              45000.50  
-johny                1145       phy             7800.00   
+Fernando             857        Management      450000.00 
+Ricardo              264        Planning        7800.00   
 
-------Menu------
-1. Enter employee details
-2. Update employee details
-3. Display employee details
-4. Exit
-Enter choice: 
-Name                 ID         Department      Salary    
----------------------------------------------------------
-saviyo               78         cs              45000.50  
-johny                1145       phy             7800.00   
+Enter the ID of the employee to edit: 264
 
-Enter the ID of the employee to edit: 
-Employee ID 87 not found.
-
-------Menu------
-1. Enter employee details
-2. Update employee details
-3. Display employee details
-4. Exit
-Enter choice: 
-Name                 ID         Department      Salary    
----------------------------------------------------------
-saviyo               78         cs              45000.50  
-johny                1145       phy             7800.00   
-
-Enter the ID of the employee to edit: 
 What to edit?
 1. Name
 2. ID
 3. Department
 4. Salary
 5. GO BACK
-Choice: Enter new ID: 
-------Menu------
-1. Enter employee details
-2. Update employee details
-3. Display employee details
-4. Exit
-Enter choice: 
-Name                 ID         Department      Salary    
----------------------------------------------------------
-saviyo               5578       cs              45000.50  
-johny                1145       phy             7800.00   
+Choice: 4
+Enter new Salary: 43000
 
 ------Menu------
 1. Enter employee details
 2. Update employee details
 3. Display employee details
 4. Exit
-Enter choice: 
-*/
+Enter choice: 3
+
+Name                 ID         Department      Salary    
+---------------------------------------------------------
+Fernando             857        Management      450000.00 
+Ricardo              264        Planning        43000.00  
+
+------Menu------
+1. Enter employee details
+2. Update employee details
+3. Display employee details
+4. Exit
+Enter choice: 4
+
+ */

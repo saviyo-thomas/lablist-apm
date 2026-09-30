@@ -15,6 +15,7 @@ Aim: Create an application that implements a suite of string functions like conc
 3. Concatenate selected indices, compare with strcmp, convert case with tolower/toupper.
 4. Exit on choice 5.
 */
+
 /* ************SOURCE CODE************ */
 #include <stdio.h>
 #include <string.h>
@@ -170,19 +171,24 @@ CS2024PG01@csserver:~/lablist$ gcc 11stringmenu.c -o 11stringmenu
 CS2024PG01@csserver:~/lablist$ ./11stringmenu
 String Utility Suite
 --------------------
-Enter the number of strings to input (max 10): Enter 3 strings:
-String 1: String 2: String 3: 
+Enter the number of strings to input (max 10): 3
+Enter 3 strings:
+String 1: pablo
+String 2: escobar
+String 3: gaveria
+
 --- Operations Menu ---
 1. Display Strings
 2. Concatenate Two Strings
 3. Compare Two Strings
 4. Convert Case (Upper/Lower)
 5. Exit
-Enter your choice: 
+Enter your choice: 1
+
 Current String List:
-[1] saviyo
-[2] thomas
-[3] dizooza
+[1] pablo
+[2] escobar
+[3] gaveria
 
 --- Operations Menu ---
 1. Display Strings
@@ -190,7 +196,10 @@ Current String List:
 3. Compare Two Strings
 4. Convert Case (Upper/Lower)
 5. Exit
-Enter your choice: Enter index of the first string: Enter index of the second string: Result of concatenation: saviyothomas
+Enter your choice: 2
+Enter index of the first string: 1
+Enter index of the second string: 3
+Result of concatenation: pablogaveria
 
 --- Operations Menu ---
 1. Display Strings
@@ -198,11 +207,10 @@ Enter your choice: Enter index of the first string: Enter index of the second st
 3. Compare Two Strings
 4. Convert Case (Upper/Lower)
 5. Exit
-Enter your choice: 
-Current String List:
-[1] saviyo
-[2] thomas
-[3] dizooza
+Enter your choice: 3
+Enter index of the first string: 2
+Enter index of the second string: 1
+Result: String 2 comes before String 1 lexicographically.
 
 --- Operations Menu ---
 1. Display Strings
@@ -210,9 +218,12 @@ Current String List:
 3. Compare Two Strings
 4. Convert Case (Upper/Lower)
 5. Exit
-Enter your choice: Enter index of the string to convert: 1. Convert to Lowercase
+Enter your choice: 4
+Enter index of the string to convert: 1
+1. Convert to Lowercase
 2. Convert to Uppercase
-Choice: Converted string: DIZOOZA
+Choice: 1
+Converted string: pablo
 
 --- Operations Menu ---
 1. Display Strings
@@ -220,11 +231,25 @@ Choice: Converted string: DIZOOZA
 3. Compare Two Strings
 4. Convert Case (Upper/Lower)
 5. Exit
-Enter your choice: 
+Enter your choice: 4
+Enter index of the string to convert: 1
+1. Convert to Lowercase
+2. Convert to Uppercase
+Choice: 2
+Converted string: PABLO
+
+--- Operations Menu ---
+1. Display Strings
+2. Concatenate Two Strings
+3. Compare Two Strings
+4. Convert Case (Upper/Lower)
+5. Exit
+Enter your choice: 1
+
 Current String List:
-[1] saviyo
-[2] thomas
-[3] dizooza
+[1] pablo
+[2] escobar
+[3] gaveria
 
 --- Operations Menu ---
 1. Display Strings
@@ -232,13 +257,6 @@ Current String List:
 3. Compare Two Strings
 4. Convert Case (Upper/Lower)
 5. Exit
-Enter your choice: Enter index of the first string: Enter index of the second string: Result: String 1 comes before String 2 lexicographically.
-
---- Operations Menu ---
-1. Display Strings
-2. Concatenate Two Strings
-3. Compare Two Strings
-4. Convert Case (Upper/Lower)
-5. Exit
-Enter your choice: Exiting application.
+Enter your choice: 5
+Exiting application.
 */

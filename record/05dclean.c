@@ -15,6 +15,7 @@ Aim: Create a program that takes a list of customer email addresses (stored in a
 3. If equal mark duplicate by setting cmail[j][0]='\0'.
 4. Display all non-blank emails.
 */
+
 /* ************SOURCE CODE************ */
 #include <stdio.h>
 #include <string.h>
@@ -65,9 +66,12 @@ CS2024PG01@csserver:~/lablist$ gcc 05dclean.c -o 05dclean
 CS2024PG01@csserver:~/lablist$ ./05dclean
 
 (Max limit=50)
-Enter number of emails: 
+Enter number of emails: 3
+saviyothomas@gmail.com
+saviyothomas@gmail.com
+sdasd@yahoo.in 
+
 Unique Emails:
 saviyothomas@gmail.com
-sfg@yahoo.in
-adgad@prot.cm
+sdasd@yahoo.in
 */
