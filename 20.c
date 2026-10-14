@@ -1,6 +1,6 @@
 /*
 Name: Saviyo Thomas
-Roll No: CS12
+Roll No: CS11
 Date: 05/10/2026
 AIM: Create a program that merges the contents of two or more text files into a single file. This could be applied in scenarios such as aggregating log files or combining reports for analysis.
 ALGORITHM:
