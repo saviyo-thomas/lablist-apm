@@ -1,0 +1,11 @@
+
+--- Start of File: file1.txt ---
+This a real file that contains text
+
+
+--- End of File: file1.txt ---
+
+--- Start of File: file2.txt ---
+la si sihTways the starting file.
+
+--- End of File: file2.txt ---
